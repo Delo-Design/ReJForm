@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.*" group="system" method="upgrade">
+    <name>PLG_REFORM</name>
+    <creationDate>26.02.2022</creationDate>
+    <author>Cymbal</author>
+    <authorEmail>cymbal@delo-design.ru</authorEmail>
+    <authorUrl>https://delo-design.ru</authorUrl>
+    <copyright>Copyright © 2022 Delo Design. All rights reserved.</copyright>
+    <license>GNU GENERAL PUBLIC LICENSE version 3</license>
+    <version>1.0</version>
+    <description>PLG_REFORM_XML_DESCRIPTION</description>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_rejform.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_rejform.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_rejform.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_system_rejform.sys.ini</language>
+    </languages>
+
+    <files>
+        <filename plugin="rejform">rejform.php</filename>
+        <folder>language</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="paths"
+                    type="textarea"
+                    label="PLG_REFORM_CONFIG_PATHS_LABEL"
+                    description="PLG_REFORM_CONFIG_PATHS_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
